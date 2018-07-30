@@ -1,0 +1,5 @@
+language: java
+script:
+  - env
+  - git diff --name-only HEAD...$TRAVIS_BRANCH
+  - git diff --name-only $TRAVIS_BRANCH...HEAD
